@@ -10,14 +10,14 @@ const Display = ({ movieList }) => {
                 className="bg-white rounded-lg shadow-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
               >
                 <h1 className="text-2xl font-bold text-gray-800 mb-2 truncate">
-                  {movie.title}
+                  {movie.title || movie.Title }
                 </h1>
                 <div className="text-gray-600 text-sm">
                     <p className="mb-1">
-                <span className="font-semibold">Duration:</span> {movie.Duration}
+                <span className="font-semibold">Duration:</span> {movie.Duration || movie.duration}
               </p>
                   <span className="font-semibold">Language:</span>{" "}
-                  {movie.Language}
+                  {movie.Language || movie.language}
                 </div>
               </div>
             ))}

@@ -35,7 +35,7 @@ const Auth = () => {
     }
     
   }
- console.log(auth?.currentUser?.photoURL)
+//  console.log(auth?.currentUser?.photoURL)
   return (
 
   <>
