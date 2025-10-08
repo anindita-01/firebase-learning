@@ -1,5 +1,6 @@
 import { addDoc } from "firebase/firestore";
 import { useState } from "react";
+import { auth } from "../config/firebase";
 
 const Create = ({ moviesCollectionRef, getMovieList }) => {
   //NEW MOVIE STATES
@@ -15,6 +16,7 @@ const Create = ({ moviesCollectionRef, getMovieList }) => {
         title: newMovieTitle,
         duration: newMovieDuration,
         language: newMovieLanguage,
+        userId: auth?.currentUser?.uid
       });
 
       getMovieList();
