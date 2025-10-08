@@ -29,6 +29,9 @@ const Create = ({ moviesCollectionRef, getMovieList }) => {
   };
 
   return (
+
+
+    //  create of CRUD
     <div>
       <div className="bg-gray-100 flex items-center justify-center min-h-screen font-sans">
         <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-2xl shadow-lg">
